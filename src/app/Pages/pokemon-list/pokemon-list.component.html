@@ -11,15 +11,14 @@
 
 <div *ngIf="pokemonList" class="pokeCard">
   <div *ngFor="let pokemon of pokemonList">
-    <mat-card>
+    <mat-card class="card">
       <mat-card-header>
         <mat-card-title>{{ pokemon.name }}</mat-card-title>
-        <mat-card-subtitle>Aqui vai o nivel da evolução</mat-card-subtitle>
-        <img mat-card-image [src]="imagemPokemon()" /><br />
+        <img mat-card-image [src]="imagemPokemon('https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png')" /><br />
       </mat-card-header>
-      <mat-card-content> Informações do pokemon </mat-card-content>
+
       <mat-card-actions>
-        <button mat-raised-button color="primary">Detalhes</button>
+        <button mat-raised-button color="primary" (click)="detalhaPokemon(this.pokemon.url)" >Detalhes</button>
       </mat-card-actions>
     </mat-card>
   </div>

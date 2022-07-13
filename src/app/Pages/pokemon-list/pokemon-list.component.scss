@@ -1,27 +1,18 @@
 .pokeCard {
-  // background-color: #eee;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  padding: 15px;
-  margin: 10px;
-  border-radius: 10px;
-  border-top: 10px solid #3359ec;
-  border-bottom: 6px solid rgb(255, 217, 0);
+width: 300px;
+height:350px;
+border:solid 1px red;
+margin: 10px;
+box-shadow: 0 1px 6px rgb(32 33 36 / 28%);
+border-color: rgba(223, 225, 229, 0);
+display: flex;
 }
 
 .mat-card-image {
-  width: 250px;
-  background-image: url("https://envato-shoebox-0.imgix.net/25e5/211b-1900-4c6d-ad52-312eb7c05089/rm218batch3-ning-08.jpg?auto=compress%2Cformat&fit=max&mark=https%3A%2F%2Felements-assets.envato.com%2Fstatic%2Fwatermark2.png&markalign=center%2Cmiddle&markalpha=18&w=700&s=bc366e7c51c32aaa7350e0bd825bb516");
-  display: block;
-  overflow: hidden;
-  // border-top: 1px solid rgb(184, 184, 184);
-  // border-bottom: 1px solid rgb(184, 184, 184);
-  margin-left: -220px;
-  margin-top: 45px;
-  border: 1px solid #c5c5c5;
-
-  box-shadow: 0 1px 6px rgb(32 33 36 / 28%);
-  border-color: rgba(223, 225, 229, 0);
+  width: 150px;
+  
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHxMGJxMiJiorvBQWKrtwZzxvZ9tavHLr6wA&usqp=CAU");
+  
+  
+  
 }

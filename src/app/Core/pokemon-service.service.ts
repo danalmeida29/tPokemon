@@ -34,25 +34,10 @@ export class PokemonServiceService {
 
   /**
    * Carregar pokemon especifico
-   * @param Id Number
-   * @returns
+   * @param 
+   * @returns resultado do pokemon selecionado
    */
-  carregarPokemonDetalhado(Id: number) {
-    return this.getDetailsPokemon(
-      `https://pokeapi.co/api/v2/pokemon/${Id}`
-    ).subscribe(
-      (res: any) => {
-        this.IdPokemon = res;
-        this.detailspokemon = this.IdPokemon.Id[1];
-        console.log('ID: ', this.detailspokemon);
-      },
-      (error: any) => {
-        this.erro = error;
-      }
-    );
-  }
-
-  getDetailsPokemon(urlString: string) {
+  getIdPokemon(urlString: string) {
     return this.http.get(urlString);
   }
 }
