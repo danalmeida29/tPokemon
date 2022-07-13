@@ -1,0 +1,26 @@
+<mat-form-field class="example-form-field" appearance="fill">
+  <mat-label>Qual Pokémon você procura ?</mat-label>
+  <input
+    matInput
+    type="text"
+    (input)="pesquisarPokemons()"
+    placeholder="pesquisar..."
+    #filterInput
+  />
+</mat-form-field>
+
+<div *ngIf="pokemonList" class="pokeCard">
+  <div *ngFor="let pokemon of pokemonList">
+    <mat-card>
+      <mat-card-header>
+        <mat-card-title>{{ pokemon.name }}</mat-card-title>
+        <mat-card-subtitle>Aqui vai o nivel da evolução</mat-card-subtitle>
+        <img mat-card-image [src]="imagemPokemon()" /><br />
+      </mat-card-header>
+      <mat-card-content> Informações do pokemon </mat-card-content>
+      <mat-card-actions>
+        <button mat-raised-button color="primary">Detalhes</button>
+      </mat-card-actions>
+    </mat-card>
+  </div>
+</div>

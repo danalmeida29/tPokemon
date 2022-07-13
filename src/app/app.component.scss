@@ -1,0 +1,19 @@
+.container {
+  width: 100%;
+}
+.content {
+  width: 100%;
+  background-image: url("https://i.pinimg.com/originals/d8/ae/3f/d8ae3f2cf8ed7a17ea67229187130df1.jpg");
+  background-size: 505px 355px;
+  background-attachment: inherit;
+  background-position: 80px 1000px;
+}
+
+.toolbar {
+  background-image: linear-gradient(
+    to bottom right,
+    rgba(203, 179, 235, 0.863),
+    rgba(144, 98, 158, 0.897),
+    rgba(122, 30, 150, 0.829)
+  );
+}
