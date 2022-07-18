@@ -8,9 +8,10 @@ import { PokemonListComponent } from './Pages/pokemon-list/pokemon-list.componen
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { BrowserModule } from '@angular/platform-browser';
 import { PokemonDetalheComponent } from './Pages/pokemon-detalhe/pokemon-detalhe.component';
+import { ModalPokemonComponent } from './Pages/modal-pokemon/modal-pokemon.component';
 
 @NgModule({
-  declarations: [AppComponent, PokemonListComponent, PokemonDetalheComponent],
+  declarations: [AppComponent, PokemonListComponent, PokemonDetalheComponent, ModalPokemonComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,

@@ -12,7 +12,9 @@ import { MatAutocompleteModule } from '@angular/material/autocomplete';
 
 import { MatChipsModule } from '@angular/material/chips';
 import { ReactiveFormsModule } from '@angular/forms';
+
 import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatDialogModule } from '@angular/material/dialog';
 
 @NgModule({
   exports: [
@@ -26,6 +28,7 @@ import { MatFormFieldModule } from '@angular/material/form-field';
     MatChipsModule,
     ReactiveFormsModule,
     MatFormFieldModule,
+    MatDialogModule,
   ],
 })
 export class MaterialModule {}

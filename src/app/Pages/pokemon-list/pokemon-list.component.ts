@@ -19,6 +19,7 @@ export class PokemonListComponent implements OnInit {
 
   erro: any;
   filteredList: any[] = [];
+  modalPokemon: any;
 
   constructor(
     private pokemonService: PokemonServiceService,
@@ -54,6 +55,8 @@ export class PokemonListComponent implements OnInit {
     );
     console.log(this.filterInput.nativeElement.value);
   }
+
+  abrirModalPokemon(mPokemon: any) {}
 
   /**
    * Comando para abrir ID do card escolhido
