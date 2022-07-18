@@ -1,24 +1,38 @@
-<mat-form-field class="example-form-field" appearance="fill">
-  <mat-label>Qual Pokémon você procura ?</mat-label>
-  <input
-    matInput
-    type="text"
-    (input)="pesquisarPokemons()"
-    placeholder="pesquisar..."
-    #filterInput
-  />
-</mat-form-field>
+<div class="pokeCard">
+  <mat-form-field class="example-form-field" appearance="fill">
+    <mat-label>Qual Pokémon você procura ?</mat-label>
+    <input
+      matInput
+      type="text"
+      (input)="pesquisarPokemons()"
+      placeholder="pesquisar..."
+      #filterInput
+    />
+  </mat-form-field>
 
-<div *ngIf="pokemonList" class="pokeCard">
-  <div *ngFor="let pokemon of pokemonList">
-    <mat-card class="card">
+  <div *ngIf="pokemonList" class="posição">
+    <mat-card class="card" *ngFor="let pokemon of pokemonList">
+      <img
+        class="img"
+        src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/001.png"
+      />
+      <hr />
       <mat-card-header>
+        <mat-card-subtitle>Nº</mat-card-subtitle>
         <mat-card-title>{{ pokemon.name }}</mat-card-title>
-        <img mat-card-image [src]="imagemPokemon('https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png')" /><br />
       </mat-card-header>
-
+      <mat-card-content>
+        <p>Tipo do Pokémon</p>
+      </mat-card-content>
+      <hr />
       <mat-card-actions>
-        <button mat-raised-button color="primary" (click)="detalhaPokemon(this.pokemon.url)" >Detalhes</button>
+        <button
+          class="sendButton"
+          mat-raised-button
+          (click)="detalhaPokemon(this.pokemon.url)"
+        >
+          LIKE
+        </button>
       </mat-card-actions>
     </mat-card>
   </div>

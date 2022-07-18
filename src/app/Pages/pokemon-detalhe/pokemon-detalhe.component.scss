@@ -1,39 +1,39 @@
-.container{
-    width: 100%;
-    display: flex;
+.container {
+  width: 100%;
+  display: flex;
 }
 
-.card{
-    width: 300px;
-    display: flex;
-    justify-content: flex-start;
-    align-content: center;
-    flex-wrap: wrap;
-    margin-left:auto;
-    margin-right: auto;
-    border-radius: 20px;
-    border-top: 10px solid #3359ec;
-    border-bottom: 6px solid #3359ec;
-    border-left:3px solid #3359ec;
-    border-right:3px solid #3359ec;
-    background-color: rgb(255, 89, 89);
+.card {
+  width: 300px;
+  display: flex;
+  justify-content: flex-start;
+  align-content: center;
+  flex-wrap: wrap;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 20px;
+  border-top: 10px solid #3359ec;
+  border-bottom: 6px solid #3359ec;
+  border-left: 3px solid #3359ec;
+  border-right: 3px solid #3359ec;
+  background-color: rgb(255, 89, 89);
 }
-.img{
-    width: 380px;
-    margin-top: 10px;
-    margin-left: -7px;
-    border-radius: 10px;
-    border: 2px solid black ;
-    background-image: linear-gradient(
-        to bottom right,
-        rgba(203, 179, 235, 0.863),
-        rgba(144, 98, 158, 0.897),
-        rgba(122, 30, 150, 0.829)
-      );
+.img {
+  width: 380px;
+  margin-top: 10px;
+  margin-left: -7px;
+  border-radius: 10px;
+  border: 2px solid black;
+  background-image: linear-gradient(
+    to bottom right,
+    rgba(203, 179, 235, 0.863),
+    rgba(144, 98, 158, 0.897),
+    rgba(122, 30, 150, 0.829)
+  );
 }
-.content{
-    margin-top: 25px;
-    width: 300px;
-    color: white;
-    font-size: large;
+.content {
+  margin-top: 25px;
+  width: 300px;
+  color: white;
+  font-size: large;
 }

@@ -1,18 +1,36 @@
 .pokeCard {
-width: 300px;
-height:350px;
-border:solid 1px red;
-margin: 10px;
-box-shadow: 0 1px 6px rgb(32 33 36 / 28%);
-border-color: rgba(223, 225, 229, 0);
-display: flex;
+  width: 80%;
+  margin-left: 100px;
+  display: block;
+  border-right: 30px solid rgb(255, 255, 255);
+  border-left: 30px solid rgb(255, 255, 255);
+  border-radius: 10px;
+  background-image: url(https://static.tumblr.com/fzbupk7/XqXmbhup7/bg88.jpg);
+}
+.posição {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+.card {
+  width: 160px;
+  margin-left: 15px;
+  margin-top: 10px;
+  border-radius: 20px;
+  border-top: 6px solid blue;
+  border-bottom: 6px solid yellow;
+  border-left: 2px solid rgb(119, 119, 119);
+  border-right: 2px solid rgb(119, 119, 119);
 }
 
-.mat-card-image {
-  width: 150px;
-  
+.img {
+  width: 192px;
+  margin-left: -16px;
+  border-bottom: 3px solid rgb(0, 0, 0);
+  border-radius: 5px;
   background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHxMGJxMiJiorvBQWKrtwZzxvZ9tavHLr6wA&usqp=CAU");
-  
-  
-  
+}
+.sendButton {
+  color: white;
+  background-color: rgb(255, 196, 0);
 }

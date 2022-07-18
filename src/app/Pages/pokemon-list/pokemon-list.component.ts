@@ -20,8 +20,11 @@ export class PokemonListComponent implements OnInit {
   erro: any;
   filteredList: any[] = [];
 
-
-  constructor(private pokemonService: PokemonServiceService, private router: Router,   private route: ActivatedRoute) {}
+  constructor(
+    private pokemonService: PokemonServiceService,
+    private router: Router,
+    private route: ActivatedRoute
+  ) {}
 
   ngOnInit(): void {
     this.listaPokemon();
@@ -41,7 +44,6 @@ export class PokemonListComponent implements OnInit {
       this.pokemonList = this.pokemons.results;
       console.log('res: ', res);
       console.log('teste pokemonList: ', this.pokemonList);
-      
     });
   }
 
@@ -57,32 +59,36 @@ export class PokemonListComponent implements OnInit {
    * Comando para abrir ID do card escolhido
    * @param Id numero do personagem escolhido(number)
    */
-  detalhaPokemon(url: string) {    
-   this.pokemonService.getIdPokemon(url).subscribe((res)=>{        
-    this.detailsPokemon = res;
-    localStorage.setItem('pk_name', this.detailsPokemon.name)  
-    localStorage.setItem('pk_img', this.detailsPokemon.sprites.front_default)  
-    localStorage.setItem('pk_abilities', this.detailsPokemon.abilities[0].ability.name)
-    localStorage.setItem('pk_abilities1', this.detailsPokemon.abilities[1].ability.name)
-    localStorage.setItem('pk_type', this.detailsPokemon.types[0].type.name)   
-    this.IdPokemon = this.detailsPokemon.id;
-    console.log(this.detailsPokemon.sprites.front_default);
-    this.onNavigateTo('pokemon-detalhe');
-   });
+  detalhaPokemon(url: string) {
+    this.pokemonService.getIdPokemon(url).subscribe((res) => {
+      this.detailsPokemon = res;
+      localStorage.setItem('pk_name', this.detailsPokemon.name);
+      localStorage.setItem('pk_img', this.detailsPokemon.sprites.front_default);
+      localStorage.setItem(
+        'pk_abilities',
+        this.detailsPokemon.abilities[0].ability.name
+      );
+      localStorage.setItem(
+        'pk_abilities1',
+        this.detailsPokemon.abilities[1].ability.name
+      );
+      localStorage.setItem('pk_type', this.detailsPokemon.types[0].type.name);
+      this.IdPokemon = this.detailsPokemon.id;
+      console.log(this.detailsPokemon.sprites.front_default);
+      this.onNavigateTo('pokemon-detalhe');
+    });
   }
 
-  
-  onNavigateTo(pageName: any){
+  onNavigateTo(pageName: any) {
     this.router.navigate([`/${pageName}`]);
   }
-  
 
   //----------------------------- nao é o mais importante-----------------------\\
   /**
    *
    * @returns URL de imagens dos pokemons
    */
-  imagemPokemon(spriteUrl:string) {
+  imagemPokemon(spriteUrl: string) {
     // const numeroFormatado = this.leadingZero();
     return spriteUrl;
   }
