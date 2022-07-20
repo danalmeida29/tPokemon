@@ -16,6 +16,7 @@ export class PokemonDetalheComponent implements OnInit {
   constructor() {}
 
   ngOnInit(): void {
+    console.log(localStorage);
     if (localStorage != null) {
       this.onNavigateTo('');
     } else {

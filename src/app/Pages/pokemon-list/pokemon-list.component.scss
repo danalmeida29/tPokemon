@@ -17,10 +17,11 @@
   margin-left: 15px;
   margin-top: 10px;
   border-radius: 20px;
-  border-top: 6px solid blue;
-  border-bottom: 6px solid yellow;
+  border-top: 6px solid #3aa4ff;
+  border-bottom: 6px solid #3aa4ff;
   border-left: 2px solid rgb(119, 119, 119);
   border-right: 2px solid rgb(119, 119, 119);
+  box-shadow: 0 2px 8px rgb(53, 112, 108);
 }
 
 .img {
@@ -32,5 +33,15 @@
 }
 .sendButton {
   color: white;
-  background-color: rgb(255, 196, 0);
+  background-color: #1688ec;
+}
+
+.modal{
+background: #757575;
+box-shadow: 0 2px 8px #07ebe0;
+}
+
+.modalButton {
+  background: #3aa4ff;
+  color: aliceblue;
 }

@@ -9,7 +9,6 @@
       #filterInput
     />
   </mat-form-field>
-
   <div *ngIf="pokemonList" class="posição">
     <mat-card class="card" *ngFor="let pokemon of pokemonList">
       <img
@@ -26,13 +25,23 @@
       </mat-card-content>
       <hr />
       <mat-card-actions>
-        <button
+        <!--button
           class="sendButton"
           mat-raised-button
           (click)="detalhaPokemon(this.pokemon.url)"
         >
           LIKE
+        </button-->
+        <button mat-raised-button class="sendButton" (click)="modal.toggle()">
+          +
         </button>
+        <app-modal #modal>
+          <h1>{{ pokemon.name }}</h1>
+          <app-pokemon-detalhe></app-pokemon-detalhe>
+          <button mat-raised-button class="modalButton" (click)="modal.toggle()">
+            close
+          </button>
+        </app-modal>
       </mat-card-actions>
     </mat-card>
   </div>
