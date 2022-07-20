@@ -2,6 +2,7 @@ import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 import { PokemonServiceService } from 'src/app/Core/pokemon-service.service';
 import { BASE_URL } from 'src/app/Core/api';
 import { ActivatedRoute, Router } from '@angular/router';
+import { ModalPokemonComponent } from '../modal-pokemon/modal-pokemon.component';
 
 @Component({
   selector: 'app-pokemon-list',
@@ -20,12 +21,14 @@ export class PokemonListComponent implements OnInit {
   erro: any;
   filteredList: any[] = [];
   modalPokemon: any;
+  // mostrar: any;
 
   constructor(
     private pokemonService: PokemonServiceService,
     private router: Router,
     private route: ActivatedRoute
-  ) {}
+  ) // private modal: ModalPokemonComponent
+  {}
 
   ngOnInit(): void {
     this.listaPokemon();
@@ -56,7 +59,9 @@ export class PokemonListComponent implements OnInit {
     console.log(this.filterInput.nativeElement.value);
   }
 
-  abrirModalPokemon(mPokemon: any) {}
+  // abrirModalPokemon() {
+  //   this.mostrar = this.modal.toggle();
+  // }
 
   /**
    * Comando para abrir ID do card escolhido

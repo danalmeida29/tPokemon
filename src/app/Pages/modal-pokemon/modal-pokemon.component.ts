@@ -1,15 +1,14 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-modal-pokemon',
   templateUrl: './modal-pokemon.component.html',
-  styleUrls: ['./modal-pokemon.component.scss']
+  styleUrls: ['./modal-pokemon.component.scss'],
 })
-export class ModalPokemonComponent implements OnInit {
+export class ModalPokemonComponent {
+  mostrar: boolean = false;
 
-  constructor() { }
-
-  ngOnInit(): void {
+  toggle() {
+    this.mostrar = !this.mostrar;
   }
-
 }
