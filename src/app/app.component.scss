@@ -1,31 +1,8 @@
 .container {
   width: 100%;
-}
-.content {
-  width: 100%;
+  display: block;
   background-color: #2f2f2f;
-  // background-image: url("https://wallpaperaccess.com/full/5818333.jpg");
   background-size: 100% 100%;
   background-attachment: inherit;
-  // background-position: 80px 1000px;
   background-repeat: no-repeat;
-}
-
-.toolbar {
-  background-image: linear-gradient(
-    to bottom right,
-    rgba(203, 179, 235, 0.863),
-    rgba(144, 98, 158, 0.897),
-    rgba(122, 30, 150, 0.829)
-  );
-}
-
-.link {
-  margin-left: 10px;
-}
-.link1 {
-  margin-left: 1160px;
-}
-.link2 {
-  margin-left: 10px;
 }

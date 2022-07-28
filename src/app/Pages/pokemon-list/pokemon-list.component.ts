@@ -29,7 +29,6 @@ export class PokemonListComponent implements OnInit {
 
   ngOnInit(): void {
     this.listaPokemon();
-    this.detailsPokemon();
   }
 
   ngAfterViewInit() {
@@ -56,8 +55,6 @@ export class PokemonListComponent implements OnInit {
     console.log(this.filterInput.nativeElement.value);
   }
 
-  abrirModalPokemon(mPokemon: any) {}
-
   /**
    * Comando para abrir ID do card escolhido
    * @param Id numero do personagem escolhido(number)
@@ -78,46 +75,10 @@ export class PokemonListComponent implements OnInit {
       localStorage.setItem('pk_type', this.detailsPokemon.types[0].type.name);
       this.IdPokemon = this.detailsPokemon.id;
       console.log(this.detailsPokemon.sprites.front_default);
-      this.onNavigateTo('pokemon-detalhe');
     });
   }
 
   onNavigateTo(pageName: any) {
     this.router.navigate([`/${pageName}`]);
   }
-
-  //----------------------------- nao é o mais importante-----------------------\\
-  /**
-   *
-   * @returns URL de imagens dos pokemons
-   */
-  imagemPokemon(spriteUrl: string) {
-    // const numeroFormatado = this.leadingZero();
-    return spriteUrl;
-  }
-
-  // numero() {
-  //   for (let i = 1; i <= 10; i++) {
-  //     console.log(`função for: ${i}`);
-  //   }
-  //   // let e: number = 1;
-  //   // while (e <= 1) {
-  //   //   console.log(`função while: ${e}`);
-  //   //   e++;
-  //   // }
-  // }
-
-  /**
-   * Contador de 0
-   * @returns
-   */
-  // leadingZero(str: string | number, size = 3): string {
-  //   let s = String(str);
-
-  //   while (s.length < (size || 2)) {
-  //     s = '0' + s;
-  //   }
-
-  //   return s;
-  // }
 }

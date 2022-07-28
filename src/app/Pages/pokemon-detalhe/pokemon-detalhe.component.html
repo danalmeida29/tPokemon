@@ -1,21 +1,18 @@
 <div class="container">
-    <mat-card class="card">
-        <mat-card-header>
-          <div mat-card-avatar class="example-header-image"></div>
-          <mat-card-title>{{this.nomePokemon}}</mat-card-title>
-        </mat-card-header>
-        <img class="img" src="{{this.imagemPokemon}}">
-        <mat-card-content class="content">
-            <p>
-             Habilidades 1: {{habilidade}}
-             <br/>
-             Habilidades 2: {{this.habilidade1}}
-             <br/>
-             Tipo: {{tipoPkm}}
-            </p> 
-        </mat-card-content>
-        <mat-card-actions>
-          <button mat-button>Voltar</button>
-        </mat-card-actions>
-      </mat-card>
+  <mat-card class="card">
+    <mat-card-header>
+      <div mat-card-avatar class="example-header-image"></div>
+      <mat-card-title>{{ this.nomePokemon }}</mat-card-title>
+    </mat-card-header>
+    <img class="img" src="{{ this.imagemPokemon }}" />
+    <mat-card-content class="content">
+      <p>
+        Habilidades 1: {{ this.habilidade }}
+        <br />
+        Habilidades 2: {{ this.habilidade1 }}
+        <br />
+        Tipo: {{ this.tipoPkm }}
+      </p>
+    </mat-card-content>
+  </mat-card>
 </div>

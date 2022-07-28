@@ -17,10 +17,10 @@ export class PokemonDetalheComponent implements OnInit {
 
   ngOnInit(): void {
     console.log(localStorage);
-    if (localStorage != null) {
-      this.onNavigateTo('');
-    } else {
-    }
+    // if (localStorage != null) {
+    //   this.onNavigateTo('');
+    // } else {
+    // }
     //Se localstorage tal == null, chame onnavigate pra tela principal
     //Se não, carrega tela, atribuindo as variaveis, cada valor do localstorage
 

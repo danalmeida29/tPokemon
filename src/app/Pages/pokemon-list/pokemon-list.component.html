@@ -21,24 +21,25 @@
         <mat-card-title>{{ pokemon.name }}</mat-card-title>
       </mat-card-header>
       <mat-card-content>
-        <p>Tipo do Pokémon</p>
+        <h3>Tipo do Pokémon</h3>
       </mat-card-content>
       <hr />
       <mat-card-actions>
-        <!--button
-          class="sendButton"
+        <button
           mat-raised-button
-          (click)="detalhaPokemon(this.pokemon.url)"
+          class="sendButton"
+          (click)="detalhaPokemon(this.pokemon.url); modal.toggle()"
         >
-          LIKE
-        </button-->
-        <button mat-raised-button class="sendButton" (click)="modal.toggle()">
-          +
+          Detalhe
         </button>
         <app-modal #modal>
           <h1>{{ pokemon.name }}</h1>
           <app-pokemon-detalhe></app-pokemon-detalhe>
-          <button mat-raised-button class="modalButton" (click)="modal.toggle()">
+          <button
+            mat-raised-button
+            class="modalButton"
+            (click)="modal.toggle()"
+          >
             close
           </button>
         </app-modal>

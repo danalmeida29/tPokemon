@@ -27,18 +27,27 @@
 .img {
   width: 192px;
   margin-left: -16px;
+  border-top: 1px solid rgb(0, 0, 0);
+  border-left: 1px solid rgb(0, 0, 0);
+  border-right: 1px solid rgb(0, 0, 0);
   border-bottom: 3px solid rgb(0, 0, 0);
   border-radius: 5px;
-  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHxMGJxMiJiorvBQWKrtwZzxvZ9tavHLr6wA&usqp=CAU");
+  background-image: linear-gradient(
+    #1688ec,
+    #07ebe0,
+    rgb(123, 177, 123),
+    rgb(51, 170, 101),
+    white
+  );
 }
 .sendButton {
   color: white;
   background-color: #1688ec;
 }
 
-.modal{
-background: #757575;
-box-shadow: 0 2px 8px #07ebe0;
+.modal {
+  background: #757575;
+  box-shadow: 0 2px 8px #07ebe0;
 }
 
 .modalButton {
